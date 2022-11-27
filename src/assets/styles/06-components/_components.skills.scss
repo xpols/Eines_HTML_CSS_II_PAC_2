@@ -1,0 +1,25 @@
+.block-skills-info {
+
+  h2 {
+    @include title-block-h2;
+  }
+
+  .left-col {
+
+    p {
+      @include skill;
+    }
+  }
+
+  .right-col {
+    border-left: 1px solid $uoc-corporate;
+  }
+
+  @media screen and (max-width: $large) {
+
+    .right-col {
+      margin-top: 2rem;
+      border-left: none;
+    }
+  }
+}

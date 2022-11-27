@@ -1,0 +1,7 @@
+/**
+* TOOLS
+* En la capa tools se almacenan los mixins y las funciones de SASS. En esta capa no deben de existir estilos.
+*/
+
+@import "tools.functions";
+@import "tools.mixins";

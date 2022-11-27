@@ -1,0 +1,31 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+/**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+/**
+ * Import ITCSS Structure
+ */
+
+@import "01-settings/settings.all";
+@import "02-tools/tools.all";
+@import "03-generic/generic.all";
+@import "04-elements/elements.all";
+@import "06-components/components.all";
+
+
+/**
+ * Do NOT include anything else in this file!
+ */

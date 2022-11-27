@@ -1,0 +1,45 @@
+.main-experience {
+
+  h2 {
+    @include title-block-h2-with-border;
+  }
+
+  .block-exp {
+    margin-bottom: 2rem;
+  }
+
+  .main-exp-info {
+    border-right: 1px solid $uoc-corporate;
+  }
+
+  @media screen and (max-width: $large) {
+
+    h2 {
+      border-bottom: none ;
+      margin-bottom: 1rem;
+    }
+
+    .block-exp {
+      border: 1px solid $uoc-corporate;
+      padding: 1rem;
+    }
+        
+    .main-exp-info {
+      border-right: none;
+      border-bottom: 1px solid $uoc-corporate;
+      margin-bottom: .5rem;
+    }
+  }
+}
+
+.align-end {
+  text-align: end;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}

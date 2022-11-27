@@ -1,0 +1,23 @@
+.education {
+
+  h2 {
+    @include title-block-h2-with-border;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+      
+  li {
+    padding-left: 1.3em;
+  }
+      
+  li::before {
+    content: "\f00c";
+    font-family: FontAwesome, serif;
+    display: inline-block;
+    margin-left: -1.3em; 
+    width: 1.3em;
+  }
+}
