@@ -1,0 +1,20 @@
+header {
+  align-items: center;
+  display: flex;
+  max-width: $extra-large;
+  margin: 2rem auto !important;
+  max-width: $extra-large;
+}
+
+@media (max-width: $medium) {
+  header {
+    display: inline !important;
+
+    .logo {
+      text-align: center;
+      padding-top: 1rem;
+      border-bottom: 1px solid $uoc-grey;
+      padding-bottom: 1rem;
+    }
+  }
+}
