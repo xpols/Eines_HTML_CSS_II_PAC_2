@@ -3,20 +3,84 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>Rock Band - Members</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>Rock Band - Members</title>
 </head>
 
 <body>
-    <include src="./views/partials/header.html"></include>
-    <main class="home">
-        <h2>Miembros</h2>
-
-    </main>
-    <include src="./views/partials/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  <include src="./views/partials/header.html"></include>
+  <main class="members">
+    <h2>Miembros</h2>
+    <div class="members-grid">
+      <div class="member-item">
+        <picture class="member-img">
+          <source srcset="./assets/images/members/member1.jpg?as=webp" type="image/webp" />
+          <img src="./assets/images/members/member1.jpg" alt="Imagen poster"
+            class="img-responsive center-block d-block mx-auto perfil" />
+        </picture>
+        <p class="member-name">James</p>
+        <p class="member-position">Cantante</p>
+        <p class="member-description">James es nuestro carismatico lider, la voz principal del grupo.</p>
+      </div>
+      <div class="member-item">
+        <picture class="member-img">
+          <source srcset="./assets/images/members/member2.jpg?as=webp" type="image/webp" />
+          <img src="./assets/images/members/member2.jpg" alt="Imagen poster"
+            class="img-responsive center-block d-block mx-auto perfil" />
+        </picture>
+        <p class="member-name">Steve</p>
+        <p class="member-position">Bajista</p>
+        <p class="member-description">Nuestro grupo no sonaria ni la mitad de bien sien él.</p>
+      </div>
+      <div class="member-item">
+        <picture class="member-img">
+          <source srcset="./assets/images/members/member3.jpg?as=webp" type="image/webp" />
+          <img src="./assets/images/members/member3.jpg" alt="Imagen poster"
+            class="img-responsive center-block d-block mx-auto perfil" />
+        </picture>
+        <p class="member-name">John</p>
+        <p class="member-position">Guitarrista</p>
+        <p class="member-description">John aporta la 'caña' a nuestro grupo. Carismatico y loco es la chispa que
+          enciende al grupo.</p>
+      </div>
+      <div class="member-item">
+        <picture class="member-img">
+          <source srcset="./assets/images/members/member4.jpg?as=webp" type="image/webp" />
+          <img src="./assets/images/members/member4.jpg" alt="Imagen poster"
+            class="img-responsive center-block d-block mx-auto perfil" />
+        </picture>
+        <p class="member-name">Conrad</p>
+        <p class="member-position">Cantante</p>
+        <p class="member-description">Su peculiar voz marca la diferencia, es capaz de llegar a tonos agudos que solo
+          oyen los lobos. AUUUUU!!!!!</p>
+      </div>
+      <div class="member-item">
+        <picture class="member-img">
+          <source srcset="./assets/images/members/member5.jpg?as=webp" type="image/webp" />
+          <img src="./assets/images/members/member5.jpg" alt="Imagen poster"
+            class="img-responsive center-block d-block mx-auto perfil" />
+        </picture>
+        <p class="member-name">MAC</p>
+        <p class="member-position">Guitarrista</p>
+        <p class="member-description">Conocido como el guapo del grupo, lo que no quita que sea una fabulos guitarrista
+          con unos dedos muy veloces.</p>
+      </div>
+      <div class="member-item">
+        <picture class="member-img">
+          <source srcset="./assets/images/members/member6.jpg?as=webp" type="image/webp" />
+          <img src="./assets/images/members/member6.jpg" alt="Imagen poster"
+            class="img-responsive center-block d-block mx-auto perfil" />
+        </picture>
+        <p class="member-name">Jimmy</p>
+        <p class="member-position">Guitarrista</p>
+        <p class="member-description">El niño del grupo, es el más joven pero tambien el más energetico.</p>
+      </div>
+    </div>
+  </main>
+  <include src="./views/partials/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>
 
 </html>

@@ -15,7 +15,7 @@
 
   @media (min-width: $large) {
 
-    main {
+    .home {
       max-width: none;
       padding: 0;
       display: grid;
@@ -26,48 +26,48 @@
         grid-column: 1 / 5;
         grid-row: 1 / 5;
       }
-    }
 
-    h2 {
-      grid-column: 4 / span 6;
-      grid-row: 2;
-      z-index: 2;
-      margin-right: 3vw;
-    }
+      h2 {
+        grid-column: 4 / span 6;
+        grid-row: 2;
+        z-index: 2;
+        margin-right: 3vw;
+      }
 
-    .primera-fecha{
-      grid-row: 1 / -1;
-      grid-column: 1;
-      writing-mode: vertical-rl;
-      color: $uoc-yellow;
-      z-index: 3;
-      margin-top: 2vw;
-      font-size: 1.5rem;
-    }
+      .primera-fecha{
+        grid-row: 1 / -1;
+        grid-column: 1;
+        writing-mode: vertical-rl;
+        color: $uoc-yellow;
+        z-index: 3;
+        margin-top: 2vw;
+        font-size: 1.5rem;
+      }
 
-    .world-tour {
-      grid-column: 6;
-      grid-row: 3;
-      align-self: center;
-      font-size: 1.25rem;
-      font-weight: bold;
-    }
+      .world-tour {
+        grid-column: 6;
+        grid-row: 3;
+        align-self: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
 
-    .conciertos {
-      grid-column: 1/8;
-      grid-row: 5;
-      background-color: $uoc-blue;
-      color: $uoc-white;
-      text-align: center;
-      font-size: 1.5rem;
-      line-height: 10vh;
-      margin-bottom: 0;
+      .conciertos {
+        grid-column: 1/8;
+        grid-row: 5;
+        background-color: $uoc-blue;
+        color: $uoc-white;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 10vh;
+        margin-bottom: 0;
+      }
     }
   }
 
   @media (max-width: $large) {
 
-    main {
+    .home {
       max-width: none;
       padding: 0;
       display: grid;
@@ -78,52 +78,52 @@
         grid-column: 1 / 4;
         grid-row: 1 / 5;
       }
-    }
 
-    h2 {
-      grid-column: 2;
-      grid-row: 2;
-      z-index: 2;
-      align-self: center;
-      text-align: end;
-    }
+      h2 {
+        grid-column: 2;
+        grid-row: 2;
+        z-index: 2;
+        align-self: center;
+        text-align: end;
+      }
 
-    .primera-fecha{
-      grid-row: 1 / -1;
-      grid-column: 1;
-      writing-mode: vertical-rl;
-      color: $uoc-yellow;
-      z-index: 3;
-      margin-top: 2vw;
-      font-size: 1.5rem;
-    }
+      .primera-fecha{
+        grid-row: 1 / -1;
+        grid-column: 1;
+        writing-mode: vertical-rl;
+        color: $uoc-yellow;
+        z-index: 3;
+        margin-top: 2vw;
+        font-size: 1.5rem;
+      }
 
-    .world-tour {
-      grid-column: 2;
-      grid-row: 3;
-      align-self: center;
-      font-size: 1.25rem;
-      font-weight: bold;
-      z-index: 3;
-      margin-left: 5vw;
-    }
+      .world-tour {
+        grid-column: 2;
+        grid-row: 3;
+        align-self: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        z-index: 3;
+        margin-left: 5vw;
+      }
 
-    .conciertos {
-      grid-column: 1/5;
-      grid-row: 5;
-      background-color: $uoc-blue;
-      color: $uoc-white;
-      text-align: center;
-      font-size: 1.5rem;
-      line-height: 10vh;
-      margin-bottom: 0;
+      .conciertos {
+        grid-column: 1/5;
+        grid-row: 5;
+        background-color: $uoc-blue;
+        color: $uoc-white;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 10vh;
+        margin-bottom: 0;
+      }
     }
   }
 
   @media (max-width: $medium) {
 
-    main {
-      
+    .home {
+
       .primera-fecha, .world-tour, .conciertos {
         font-size: 1.15rem;
       }
