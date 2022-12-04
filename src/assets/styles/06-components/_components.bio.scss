@@ -1,0 +1,100 @@
+.bio {
+  font-size: 1.25rem;
+
+  .bio-heroe {
+    min-height: 60vh;
+    background-image: url("../images/concert_bio.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    text-align: center;
+    margin-bottom: 6rem;
+
+    h2 {
+      padding-top: 25vh;
+    }
+
+    p {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  }
+
+  .cuerpo-articulo {
+    max-width: $extra-large;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @media (max-width: $extra-large) {
+      margin-left: 5vw;
+      margin-right: 5vw;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .texto-destacado {
+      font-size: 2rem;
+      color: $uoc-blue;
+    }
+
+    .texto-intro{
+      margin-top: 2rem;
+      margin-bottom: 0;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid $uoc-blue;
+    }
+
+    .principios {
+      margin-bottom: 0;
+      padding-top: 2rem;
+      counter-reset: my-counter;
+      list-style: none;
+      border-bottom: 1px solid $uoc-blue;
+
+      li {
+        margin-bottom: 2rem;
+        counter-increment: my-counter;
+        position: relative;
+
+        p:first-child {
+          font-weight: bold;
+        }
+      }
+      
+      li::before {
+        --size: 30px;
+        content: counter(my-counter);
+        color: $uoc-white;
+        background-color: $uoc-blue;
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-align: center;
+        position: absolute;
+        width: var(--size);
+        height: var(--size);
+        top: 0;
+        left: calc(-1 * var(--size) - 10px);
+        line-height: var(--size);
+        border-radius: 50%;
+      }
+    }
+
+    .cita {
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+
+      blockquote {
+        font-size: 1.75rem;
+        color: $uoc-white;
+        background-color: $uoc-blue;
+        padding: 1rem;
+      }
+    }
+
+    .texto-cierre {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+}

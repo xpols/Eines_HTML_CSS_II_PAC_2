@@ -11,6 +11,13 @@
     margin-bottom: 4rem;
   }
 
+  @media (max-width: $medium) {
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+
   .members-grid {
     display: flex;
     flex-wrap: wrap;
