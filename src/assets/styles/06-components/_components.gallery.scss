@@ -1,0 +1,30 @@
+.gallery {
+    
+  .gallery-grid {
+    $tamano: 150px;
+    $escalado: 1.5;
+        
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3,auto);
+      
+    .gallery-image {
+      width: 0;
+      height: 0;
+      min-height: 100%;
+      min-width: 100%;
+      object-fit: cover;
+      cursor: pointer;
+      filter: grayscale(100%);
+      transition: .5s ease-in-out;
+    }
+  
+    .gallery-image:hover{
+      filter: grayscale(0);
+      width: calc($tamano * $escalado);
+      height: calc($tamano * $escalado);
+    }
+  }
+}

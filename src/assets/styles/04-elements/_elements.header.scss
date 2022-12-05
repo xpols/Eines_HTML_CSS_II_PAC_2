@@ -1,8 +1,9 @@
 header {
   align-items: center;
   display: flex;
-  max-width: $extra-large;
-  margin: 2rem auto !important;
+  @include main-objects;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
 }
 
 @media (max-width: $medium) {

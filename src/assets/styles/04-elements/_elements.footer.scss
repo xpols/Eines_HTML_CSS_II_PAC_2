@@ -1,10 +1,11 @@
 
 
 footer {
+  @include main-objects;
   align-items: center;
   display: flex;
-  max-width: $extra-large;
-  margin: 0 auto 2rem auto !important;
+  margin-top: 0;
+  margin-bottom: 2rem;
   flex: 1;
   border-top: 1px solid $uoc-grey;
   padding-top: 2rem;

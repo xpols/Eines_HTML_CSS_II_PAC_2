@@ -1,0 +1,90 @@
+.concerts {
+  max-width: $extra-large;
+  @include object-center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: "cf_revolutionregular", sans-serif;
+  background: $uoc-white;
+
+  h2 {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    font-size: calc(1.5rem + 2vw);
+  }
+  
+  .concerts-next {
+
+    img {
+      width: 100%; 
+      height: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 6rem;
+      margin-bottom: 2rem;
+      font-size: calc(1.5rem + 2vw);
+    }
+
+    .concerts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-gap: 1rem;
+    }
+    
+    .concerts-location {
+      position: relative;
+    }
+    
+    .concerts-image {
+      line-height: 0;
+      overflow: hidden;
+    }
+    
+    .concerts-image img {
+      filter: blur(0px);
+      transition: filter .3s ease-in;
+      transform: scale(1.1);
+    }
+    
+    .concerts-title {
+      font-size: 1.5em;
+      text-decoration: none;
+      z-index: 1;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity .35s;
+      background: $uoc-blue-op;
+      color: $uoc-yellow;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .concerts-location:hover .concerts-title {
+      opacity: 1;
+    }
+    
+    .concerts-location:hover .concerts-image img {
+      filter: blur(1px);
+    }
+    
+    @media (hover: none) { 
+
+      .concerts-title {
+        opacity: 1;
+      }
+
+      .concerts-image img {
+        filter: blur(1px);
+      }
+    }
+  }
+
+  
+}

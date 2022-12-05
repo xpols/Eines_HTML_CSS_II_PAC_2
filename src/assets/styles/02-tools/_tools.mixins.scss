@@ -1,18 +1,10 @@
-@mixin title-block-h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
+@mixin object-center {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
-@mixin title-block-h2-with-border {
-  text-align: center;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid $uoc-corporate;
-}
-
-@mixin skill {
-  display: inline-block;
-  background-color: $uoc-masterbrand;
-  padding: .5rem;
+@mixin main-objects {
+  @include object-center;
+  max-width: $extra-large;
+  background-color: $uoc-white;
 }
