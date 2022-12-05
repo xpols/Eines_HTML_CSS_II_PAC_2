@@ -3,10 +3,10 @@
   margin-bottom: 4rem;
 
   h2 {
-    font-size: calc(1.5rem + 2vw);
-    text-align: center;
     margin-top: 6rem;
     margin-bottom: 4rem;
+    font-size: calc(1.5rem + 2vw);
+    text-align: center;
   }
 
   @media (max-width: $medium) {
@@ -36,23 +36,20 @@
       }
 
       .member-name {
-        text-align: center;
-        font-size: 1.25rem;
-        color: $uoc-blue;
-        font-family: "cf_revolutionregular", sans-serif;
         margin-bottom: 0;
         margin-top: 1rem;
+        text-align: center;
+        color: $uoc-blue;
+        font-family: "cf_revolutionregular", sans-serif;
       }
 
       .member-position {
         text-align: center;
-        font-size: .75rem;
       }
 
       .member-description {
-        font-size: .75rem;
-        text-align: center;
         margin-top: 1rem;
+        text-align: center;
       }
     }
   }

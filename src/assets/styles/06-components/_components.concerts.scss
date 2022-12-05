@@ -7,9 +7,9 @@
   background: $uoc-white;
 
   h2 {
-    text-align: center;
     margin-top: 6rem;
     margin-bottom: 2rem;
+    text-align: center;
     font-size: calc(1.5rem + 2vw);
   }
   
@@ -21,9 +21,9 @@
     }
 
     h2 {
-      text-align: center;
       margin-top: 6rem;
       margin-bottom: 2rem;
+      text-align: center;
       font-size: calc(1.5rem + 2vw);
     }
 
@@ -49,21 +49,20 @@
     }
     
     .concerts-title {
-      font-size: 1.5em;
-      text-decoration: none;
-      z-index: 1;
       position: absolute;
       height: 100%;
       width: 100%;
       top: 0;
       left: 0;
-      opacity: 0;
-      transition: opacity .35s;
-      background: $uoc-blue-op;
-      color: $uoc-yellow;
+      z-index: 1;
       display: flex;
       align-items: center;
       justify-content: center;
+      text-decoration: none;
+      color: $uoc-yellow;
+      opacity: 0;
+      transition: opacity .35s;
+      background: $uoc-blue-op;
     }
     
     .concerts-location:hover .concerts-title {
